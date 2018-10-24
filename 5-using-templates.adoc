@@ -47,7 +47,7 @@ MySQL root user Password: pricelist
 MySQL Database Name: pricelist
 .....
 
-image::images/mysql_ephemeral_creation.png[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/mysql_ephemeral_creation.png[image]
 
 Click the *Next* button.
 
