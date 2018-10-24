@@ -63,7 +63,7 @@ pipeline that runs. We will discuss that in the next step.
 This will spin up a Jenkins pod. Give it a few minutes as it takes time
 to download and deploy jenkins. You will also see the URL assigned to
 your Jenkins. It would be something like
-`https://jenkins-pipeline-UserName.apps.workshop.osecloud.com`
+`https://jenkins-pipeline-UserName.{{APPS_ADDRESS}}`
 
 If you click on that URL, you will be taken to Jenkins Console. *Note:*
 The browser may complain that the URL is insecure. Click on advanced and
@@ -144,14 +144,14 @@ Untick the following boxes:
 
 Click "Save" and in the end, the config should look like this.
 
-image::images/disable-triggers1.png[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/disable-triggers1.png[image]
 
 
 
 Do the same steps for the `testing-UserName` project. It should
 look similar.
 
-image::images/disable-triggers2.png[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/disable-triggers2.png[image]
 
 
 *Step 5:* Start pipeline
@@ -159,11 +159,11 @@ Change Project to pipeline-Username
 Build --> Pipelines
 Now click on the `Start Pipeline` button to start the pipeline.
 
-image::images/pipeline2.jpeg[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/pipeline2.jpeg[image]
 
 Notice the pipeline starts and `build` and `deploy` stages are executed.
 
-image::images/pipeine3.jpeg[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/pipeine3.jpeg[image]
 
 Click on the `View log` link for the pipeline. It’ll take you to Jenkins
 and show the logs.
@@ -204,4 +204,3 @@ understand how to create a pipeline that goes across multiple projects.
 Congratulations!! In this lab, you have learnt how to set up and run
 your own CI/CD pipeline on OpenShift.
 
-link:0_toc.adoc[Table Of Contents]
