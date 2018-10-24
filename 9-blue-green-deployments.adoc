@@ -234,7 +234,7 @@ image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/im
 
 Next, tick on `Split traffic across multiple services`
 
-image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/g-slipt-traffic.png[image]
+image:https://raw.githubusercontent.com/PraveenAnil/openshiftv3-workshop/3.10/images/bg-slipt-traffic.png[image]
 
 Here, set the weight to 50% on blue and 50% on green. This will make it to where half the
 traffic will go to the green application and half to the blue application.
