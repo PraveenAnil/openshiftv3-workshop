@@ -65,4 +65,3 @@ To login to a remote server use:
 $ oc login {{CONSOLE_ADDRESS}}
 ----
 
-link:0_toc.adoc[Table Of Contents]
