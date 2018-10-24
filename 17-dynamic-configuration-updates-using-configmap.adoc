@@ -6,8 +6,7 @@ In this lab, we will learn how to dynamically update this configuration
 in a running pod. We will do this with an example by changing the
 database connection to use a PostgreSQL database.
 
-In the last
-link:16.%20Adding%20database%20to%20your%20Spring%20Boot%20Application.md[lab],
+In the last [lab],
 we created a configuration to connect to the MySQL database by mounting
 `application.properties` file using ConfigMap.
 
@@ -149,7 +148,7 @@ spring.datasource.password=password
 *Step 4: Test the application connection*
 
 Click the application url now i.e
-`http://bootapp-spring-UserName.apps.workshop.osecloud.com/`. It will open
+`http://bootapp-spring-UserName.{{APPS_ADDRESS}}/`. It will open
 a new tab and greets you
 
 ....
@@ -161,7 +160,7 @@ example `oc logs -f bootapp-2-06a4b` Watch out for connection url in the
 output.
 
 Now try the `/dbtest` endpoint i.e.
-`http://bootapp-spring-veer.apps.workshop.osecloud.com/dbtest`.
+`http://bootapp-spring-veer.{{APPS_ADDRESS}}/dbtest`.
 
 *Note* that the output is still from the MySQLDB.
 
@@ -187,7 +186,7 @@ annotation. So we can invoke `/refresh` endpoint to refresh the cache.
 Run the following command from CLI to refresh the cache.
 
 ....
-$ curl -X POST http://bootapp-spring-veer.apps.workshop.osecloud.com/refresh
+$ curl -X POST http://bootapp-spring-veer.{{APPS_ADDRESS}}/refresh
 ["spring.datasource.url","spring.datasource.platform"]
 ....
 
@@ -201,7 +200,7 @@ refreshed.
 Now try the `/dbtest` endpoint again. Now the result will show the data
 from the postgresql database.
 
-.....
+....
 Customers List
 
 
@@ -221,5 +220,3 @@ application.properties were dynamically updated.
 
 *Summary:* In this lab, we have learnt the ConfigMap’s flexibility and
 how it allows dynamic updates to the pod configuration.
-
-link:0_toc.adoc[Table Of Contents]
