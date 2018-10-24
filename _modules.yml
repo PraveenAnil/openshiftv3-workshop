@@ -1,0 +1,65 @@
+config:
+  vars:
+    - name: DEFAULT_PASSWORD
+      desc: Default password for users in the environment
+      value: openshift
+    - name: GIT_SERVER_URL
+      desc: Git server url
+      value: http://gitlab.apps.ocp39.openshiftlabs.com
+    - name: CONSOLE_ADDRESS
+      desc: HTTP address of the OpenShift console
+      value: https://master.ocp39.openshiftlabs.com
+    - name: APPS_ADDRESS
+      desc: HTTP address suffix of apps deployed on OpenShift
+      value: apps.ocp39.openshiftlabs.com
+    - name: GET_STARTED_CLI_URL
+      desc: URL to documentation to configure CLI
+      value: https://docs.openshift.com/container-platform/latest/cli_reference/get_started_cli.html
+    - name: NEXUS_URL
+      desc: URL to Nexus repository
+      value: http://nexus.nexus.svc.cluster.local:8081/repository/maven-public/
+    - name: REDHAT_DOWNLOAD_OC_PORTAL_URL
+      desc: URL for Red Hat portal oc binary download
+      value: https://access.redhat.com/downloads/content/290
+
+modules:
+  0-setting-up-client-tools:
+    name: Setting up client tools
+  1-create-an-app-from-a-docker-image:
+    name: Create an App from a Docker image
+  2-create-an-app-using-docker-build:
+    name: Create an App using Docker build
+  3-using-web-console:
+    name: Using Web Console
+  4-creating-an-application-using-jboss-eap-builder-image:
+    name: Creating an application using JBoss EAP builder image
+  5-using-templates:
+    name: Using Templates
+  6-scale-up-and-scale-down-and-idle-the-application-instances:
+    name: Scale up and Scale down and Idle the application instances
+  7-binary-deployment-of-a-war-file:
+    name: Binary Deployment of a war file
+  8-using-ssl-in-your-application:
+    name: Using SSL in your application
+  9-blue-green-deployments:
+    name: Blue-Green Deployments
+  10-webhooks:
+    name: SCM Web Hooks
+  11-rollback-applications:
+    name: Rollback Applications
+  12-code-promotion-across-environments:
+    name: Code Promotion across Environments
+  13-using-persistent-storage:
+    name: Using Persistent Storage
+  14-using-a-custom-s2i-image:
+    name: Using Custom S2I Image to deploy a SpringBoot Application
+  15-adding-custom-s2i-image-to-the-project-catalog:
+    name: Adding Custom S2I Image to the Project Catalog
+  16-using-configmap-to-inject-application-configuration:
+    name: Using ConfigMap to add a Backend Database configuration to the application
+  17-dynamic-configuration-updates-using-configmap:
+    name: Dynamic configuration updates using ConfigMap
+  18-changing-code-on-the-fly:
+    name: Changing code on the fly
+  19-creating-a-pipeline:
+    name: Creating a Pipeline
