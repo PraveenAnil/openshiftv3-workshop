@@ -152,6 +152,7 @@ the running pod when you navigate to *Applications->Pods* on the Web
 console.
 
 Now use `curl` to run the database `bootstrap` script
+
 ....
 $ oc project
 Using project "consoleproject-Username" on server "{{CONSOLE_ADDRESS}}".
