@@ -85,11 +85,11 @@ it reads the values from environment varables.
 
 To add a frontend again click on *Add to Project -> Browse Catalog*
 This will take you to the Service Catalog.
+
 Select Languages -> PHP -> PHP
 
 Click *Next*
 
-****
 Add to Project: consoleproject-UserName (this should be the same project as MySQL Ephemeral)
 Application Name: pricelist
 Git Repository: https://github.com/RedHatWorkshops/php-pricelist
